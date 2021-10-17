@@ -4,7 +4,9 @@ public class PersonSampleTwo {
 
 	private String name;
 	private int age;
-	
+	private String gender;
+	private String eyeColor = "blue";
+
 	public PersonSampleTwo(String name, int age){
 		setName(name);
 		setAge(age);
@@ -30,5 +32,18 @@ public class PersonSampleTwo {
 			throw new IllegalArgumentException("Age cannot be negative!");
 		}
 		this.age = age;
+
+		public String getGender[]{
+				return this.gender;
+		}
+		public void setGender(String gender){
+			if (gender.equals("male") || gender.equals("female")){
+				this.gender = gender;
+			}
+			else{
+				throw new IllegalArgumentException("Gender cannot be null!");
+			}
+		}
+
 	}
 }

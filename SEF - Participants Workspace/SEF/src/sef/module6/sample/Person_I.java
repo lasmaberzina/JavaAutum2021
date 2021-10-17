@@ -5,6 +5,7 @@ package sef.module6.sample;
  */
 public class Person_I {
 
+	public Object setSalary;
 	//Attributes
 	private String name;
 	private int age;
@@ -46,4 +47,13 @@ public class Person_I {
 		System.out.println("Inside Person Class");
 	}
 
+
+	public void setTitle(String developer) {
+	}
+
+    public String getSalary() {
+    }
+
+	public String getTitle() {
+	}
 }

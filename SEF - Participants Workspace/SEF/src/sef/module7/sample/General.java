@@ -13,7 +13,7 @@ public class General {
 	}
 	
 	//The method below is able to accept any class that implements the Strategy int
-	public void setStragey(Strategy strategy){
+	public void setStratgy(Strategy strategy){
 		myStrategy = strategy;
 	}
 	
@@ -24,5 +24,16 @@ public class General {
 	public void executeStrategy(){
 		System.out.print("General " + name + " executing his strategy...");
 		myStrategy.execute();
+	}
+
+	public void setStratgy(Strategy stragey) {
+		this.stragey = stragey;
+	}
+
+	public Strategy getMyStrategy() {
+		return stragey;
+	}
+
+	public void setStragey(Strategy s2) {
 	}
 }

@@ -7,7 +7,7 @@ package sef.module4.activity;
  * @author 
  *
  */
-public class Calculator {
+public class Calculator<normalCalc, result> {
 
 	
 	private String calculatorType;
@@ -38,37 +38,28 @@ public class Calculator {
 	}
 
 	// Subtract
-	public int subtract(int x, int y) {
-		int diff = 0;
-		if (x > y) {
-			diff = x - y;
-		} else {
-			diff = y - x;
-		}
+	 public int subtract (int x, int y) {
+		 int diff = 0;
+		 if (y > x) {
+		 diff = x - y;
+	 }else{
+			 diff = y -x;
 
+		 }
 		return diff;
+
 	}
-
 	// Multiply
-	public int multiply(int[] numbers) {
-		int temp = 1;
-
-		for (int i = 0; i < numbers.length; i++) {
-			temp = temp * numbers[i];
-		}
-		return temp;
+	public int multiply(int x, int y) {
+		int mul = x * y;
+		return mul;
 
 	}
 
 	// Divide
-	public int divide(int x, int y) {
-		int divValue = 0;
-		if (x == 0 || y == 0) {
-			divValue = 0;
-		} else {
-			divValue = x / y;
-		}
-		return divValue;
+	public int divide (int x, int y) {
+		int div = x / y;
+		return div;
 
 	}
-}
+	}
